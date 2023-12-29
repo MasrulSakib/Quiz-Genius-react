@@ -1,0 +1,8 @@
+.blog-container h2,
+li {
+    color: salmon;
+}
+
+.blog-container p {
+    color: black;
+}
