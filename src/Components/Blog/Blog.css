@@ -1,5 +1,9 @@
-.blog-container h2,
-li {
+.blog-container {
+    width: 90%;
+    text-align: justify;
+}
+
+.blog-container li {
     color: salmon;
 }
 
