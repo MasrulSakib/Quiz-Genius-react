@@ -1,0 +1,19 @@
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.course-container img {
+    height: 200px;
+    width: 200px;
+}
+
+.course-details {
+    background-color: rgb(243, 196, 191);
+    border-radius: 8px;
+    margin: 120px 100px;
+    padding: 30px;
+    line-height: 15px;
+
+}
