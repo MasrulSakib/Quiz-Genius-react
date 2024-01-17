@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Topics.css';
 import { useLoaderData } from 'react-router-dom';
 import Data from '../Data/Data';
@@ -6,6 +6,12 @@ import Data from '../Data/Data';
 
 const Topics = () => {
     const dataInfo = useLoaderData();
+    const [course, setCourse] = useState([])
+    const handleAddCourses = data => {
+        console.log()
+    }
+
+
     const courses = dataInfo.data;
     console.log(courses);
     return (
@@ -17,7 +23,7 @@ const Topics = () => {
             <div className='topics-container'>
 
                 {
-                    courses.map(course => <Data key={course.id} course={course}></Data>)
+                    courses.map(course => <Data key={course.id} course={course} ></Data>)
                 }
             </div>
         </div>

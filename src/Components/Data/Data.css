@@ -17,3 +17,21 @@
     line-height: 15px;
 
 }
+
+.data-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 8px;
+    height: 50px;
+    width: 200px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 700;
+}
+
+.data-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}

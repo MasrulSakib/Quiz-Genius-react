@@ -11,6 +11,7 @@ const Data = ({ course }) => {
                 <img src={logo} alt="" />
                 <h2>{name}</h2>
                 <p>Total: {total}</p>
+                <button className='data-btn'>Start</button>
             </div>
 
         </div>
