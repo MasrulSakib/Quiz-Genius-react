@@ -1,0 +1,26 @@
+.option-list {
+    padding: 15px 0;
+    text-align: justify;
+    color: salmon;
+    font-weight: 700;
+
+
+}
+
+.eyeIcon {
+    color: salmon;
+    height: 23px;
+    width: 23px;
+    padding: 0 8px;
+
+
+
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+
+
+}
