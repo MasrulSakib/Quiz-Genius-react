@@ -3,17 +3,22 @@
     text-align: justify;
     color: salmon;
     font-weight: 700;
-
-
 }
 
 .eyeIcon {
     color: salmon;
     height: 23px;
     width: 23px;
-    padding: 0 8px;
+    padding: 12px 0 8px 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
-
+.eyeIcon span {
+    padding: 4px 8px;
+    background-color: salmon;
+    color: aliceblue;
+    border-radius: 5px;
 
 
 }

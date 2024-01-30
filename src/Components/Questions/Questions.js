@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Options from '../Options/Options';
 import './Questions.css';
 import { EyeIcon } from '@heroicons/react/24/solid';
@@ -6,8 +6,10 @@ import { EyeIcon } from '@heroicons/react/24/solid';
 const Questions = ({ quesData }) => {
     console.log(quesData);
     const { question, correctAnswer, options } = quesData;
+
+    const [showText, setShowText] = useState(false);
     const handleText = () => {
-        <p>Correct Answer: {correctAnswer}</p>
+        setShowText(!showText);
     }
 
     return (
@@ -15,7 +17,9 @@ const Questions = ({ quesData }) => {
             <ul>
                 <li>
                     <div className='icon'>{question}
-                        <p onMouseEnter={handleText} className="eyeIcon"><EyeIcon /></p></div>
+                        <p className="eyeIcon">
+                            <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+                    </div>
                 </li>
 
                 <div >
