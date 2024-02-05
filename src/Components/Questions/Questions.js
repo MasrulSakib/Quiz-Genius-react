@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
 import Options from '../Options/Options';
 import './Questions.css';
 import { EyeIcon } from '@heroicons/react/24/solid';
 
+export const QuizContext = createContext();
+
 const Questions = ({ quesData }) => {
-    console.log(quesData);
     const { question, correctAnswer, options } = quesData;
 
     const [showText, setShowText] = useState(false);
@@ -13,24 +14,28 @@ const Questions = ({ quesData }) => {
     }
 
     return (
-        <div className='option-list'>
-            <ul>
-                <li>
-                    <div className='icon'>{question}
-                        <p className="eyeIcon">
-                            <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+
+        <QuizContext.Provider value={correctAnswer}>
+            <div className='option-list'>
+                <ul>
+                    <li>
+                        <div className='icon'>{question}
+                            <p className="eyeIcon">
+                                <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+                        </div>
+                    </li>
+
+                    <div >
+                        {
+                            options.map((option, index) => <Options key={index} option={option}> </Options>)
+                        }
+
                     </div>
-                </li>
 
-                <div >
-                    {
-                        options.map((option, index) => <Options key={index} option={option}></Options>)
-                    }
-                </div>
+                </ul>
 
-            </ul>
-
-        </div>
+            </div>
+        </QuizContext.Provider>
     );
 };
 

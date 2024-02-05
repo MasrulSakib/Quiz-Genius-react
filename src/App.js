@@ -8,6 +8,8 @@ import QuizDetails from './Components/QuizDetails/QuizDetails';
 
 function App() {
 
+
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -41,6 +43,7 @@ function App() {
 
       ],
     }
+
   ])
 
   return (
