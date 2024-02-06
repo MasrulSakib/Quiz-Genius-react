@@ -10,7 +10,6 @@ const Data = ({ course }) => {
     }
 
 
-
     return (
         <div className='course-container'>
             <div className='course-details'>
@@ -19,7 +18,6 @@ const Data = ({ course }) => {
                 <p>Total: {total}</p>
                 <button onClick={handleNavigate} className='data-btn'>Start</button>
             </div>
-
         </div>
     );
 }
