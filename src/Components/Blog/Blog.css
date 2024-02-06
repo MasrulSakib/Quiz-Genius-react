@@ -12,3 +12,20 @@
 .blog-container p {
     color: black;
 }
+
+@media screen and (max-width: 992px) {
+
+    .blog-container {
+        width: 87%;
+        margin: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .blog-container {
+        width: 78%;
+        margin: 0 8px;
+        font-size: small;
+    }
+}

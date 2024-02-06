@@ -20,7 +20,7 @@ const Statistics = () => {
     console.log(topics)
     return (
         <div className='rechart-container'>
-            <ResponsiveContainer width="55%" height={550}>
+            <ResponsiveContainer>
                 <BarChart
                     data={topics}
                     margin={{
@@ -36,7 +36,7 @@ const Statistics = () => {
                     <Tooltip />
                     <Legend />
                     <Bar dataKey="name" fill="#8884d8" />
-                    <Bar dataKey="total" fill="#FA8072" />
+                    <Bar dataKey="total" fill="#FEA25B" />
                 </BarChart>
             </ResponsiveContainer>
         </div>

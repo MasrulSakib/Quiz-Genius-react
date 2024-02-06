@@ -36,4 +36,35 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 
+
+}
+
+@media screen and (max-width: 992px) {
+    .header-container {
+        padding: 0 15px;
+    }
+
+    .header-container a {
+        font-size: medium;
+    }
+
+    .logo-container {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-container {
+        padding: 0 15px;
+    }
+
+    .header-container a {
+        font-size: small;
+    }
+
+    .logo-container {
+        font-size: small;
+        width: 100%;
+    }
 }

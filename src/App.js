@@ -6,6 +6,7 @@ import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import QuizDetails from './Components/QuizDetails/QuizDetails';
 
+
 function App() {
 
 
@@ -38,15 +39,18 @@ function App() {
           element: <Statistics></Statistics>
         },
         {
-
           path: 'blog',
           element: <Blog></Blog>
-
-        }
-
+        },
       ],
+    },
+    {
+      path: '*',
+      element: <div>
+        <h1>404 NOT FOUND</h1>
+        <p>Oops! You seem to be lost.</p>
+      </div>
     }
-
   ])
 
   return (

@@ -29,3 +29,21 @@
 
 
 }
+
+@media screen and (max-width: 992px) {
+    .option-list {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .option-list {
+        font-size: smaller;
+    }
+
+    .icon {
+        display: block;
+        margin: -10px;
+
+    }
+}

@@ -10,3 +10,23 @@
     text-decoration: 2px underline;
     font-size: larger;
 }
+
+@media screen and (max-width: 992px) {
+    .quiz-containers {
+        padding: 30px 44px;
+    }
+
+    .quiz-containers h3 {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quiz-containers {
+        padding: 30px 22px;
+    }
+
+    .quiz-containers h3 {
+        font-size: small;
+    }
+}

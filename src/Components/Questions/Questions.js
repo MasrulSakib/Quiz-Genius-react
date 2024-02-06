@@ -19,9 +19,14 @@ const Questions = ({ quesData }) => {
             <div className='option-list'>
                 <ul>
                     <li>
-                        <div className='icon'>{question}
-                            <p className="eyeIcon">
-                                <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+                        <div className='icon'>
+                            <div>
+                                {question}
+                            </div>
+                            <div>
+                                <p className="eyeIcon">
+                                    <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+                            </div>
                         </div>
                     </li>
 
