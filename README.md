@@ -1,5 +1,5 @@
 # Quiz Genius
-## <a href="https://quiet-zuccutto-8286d9.netlify.app/">QuizGenius</a>
+## <a href="https://guileless-heliotrope-d561cb.netlify.app" >QuizGenius</a>
 ### Welcome to Quiz Genius, a fun and engaging quiz game website! Below, you'll find important information about the website, its features, and how to navigate through it.
 
 # Features:
