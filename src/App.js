@@ -9,8 +9,6 @@ import QuizDetails from './Components/QuizDetails/QuizDetails';
 
 function App() {
 
-
-
   const router = createBrowserRouter([
     {
       path: '/',
@@ -46,9 +44,12 @@ function App() {
     },
     {
       path: '*',
-      element: <div>
-        <h1>404 NOT FOUND</h1>
-        <p>Oops! You seem to be lost.</p>
+      element: <div className='error-container'>
+        <div>
+          <h1>404 NOT FOUND</h1>
+          <p>Oops! You seem to be lost.</p>
+          <p>Please check your URL</p>
+        </div>
       </div>
     }
   ])

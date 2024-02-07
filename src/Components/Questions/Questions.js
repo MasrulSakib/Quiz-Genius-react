@@ -2,15 +2,15 @@ import React, { createContext, useState } from 'react';
 import Options from '../Options/Options';
 import './Questions.css';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import { toast } from 'react-toastify';
 
 export const QuizContext = createContext();
 
 const Questions = ({ quesData }) => {
     const { question, correctAnswer, options } = quesData;
 
-    const [showText, setShowText] = useState(false);
     const handleText = () => {
-        setShowText(!showText);
+        toast.info(correctAnswer);
     }
 
     return (
@@ -20,12 +20,10 @@ const Questions = ({ quesData }) => {
                 <ul>
                     <li>
                         <div className='icon'>
-                            <div>
-                                {question}
-                            </div>
+                            {question}
                             <div>
                                 <p className="eyeIcon">
-                                    <EyeIcon onClick={handleText} /> {showText && <span>{correctAnswer}</span>}</p>
+                                    <EyeIcon onClick={handleText} /></p>
                             </div>
                         </div>
                     </li>

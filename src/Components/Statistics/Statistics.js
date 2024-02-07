@@ -36,7 +36,7 @@ const Statistics = () => {
                     <Tooltip />
                     <Legend />
                     <Bar dataKey="name" fill="#8884d8" />
-                    <Bar dataKey="total" fill="#FEA25B" />
+                    <Bar dataKey="total" fill="#FA8072" />
                 </BarChart>
             </ResponsiveContainer>
         </div>

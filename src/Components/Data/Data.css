@@ -10,6 +10,9 @@
 }
 
 .course-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(243, 196, 191);
     border-radius: 8px;
     margin: 120px 100px;

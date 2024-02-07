@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.error-container h1 {
+  color: red;
+  font-weight: 700;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +45,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

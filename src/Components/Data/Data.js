@@ -13,10 +13,12 @@ const Data = ({ course }) => {
     return (
         <div className='course-container'>
             <div className='course-details'>
-                <img src={logo} alt="" />
-                <h2>{name}</h2>
-                <p>Total: {total}</p>
-                <button onClick={handleNavigate} className='data-btn'>Start</button>
+                <div>
+                    <img src={logo} alt="" />
+                    <h2>{name}</h2>
+                    <p>Total: {total}</p>
+                    <button onClick={handleNavigate} className='data-btn'>Start</button>
+                </div>
             </div>
         </div>
     );
