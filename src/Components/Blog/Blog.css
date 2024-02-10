@@ -13,7 +13,7 @@
     color: black;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (min-width: 784px) and (max-width: 992px) {
 
     .blog-container {
         width: 87%;
@@ -22,7 +22,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 784px) {
     .blog-container {
         width: 78%;
         margin: 0 8px;

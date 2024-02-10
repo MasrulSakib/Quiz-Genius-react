@@ -11,7 +11,7 @@
     font-size: larger;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (min-width: 784px) and (max-width: 992px) {
     .quiz-containers {
         padding: 30px 44px;
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 784px) {
     .quiz-containers {
         padding: 30px 22px;
     }
