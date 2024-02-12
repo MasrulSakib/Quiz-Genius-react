@@ -1,5 +1,5 @@
 .topic-text {
-    margin: 0 80px;
+    margin: 0 20px;
     text-align: justify;
     text-shadow: 0 0 5px salmon;
     padding: 8px;
@@ -8,7 +8,6 @@
 .topics-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
@@ -16,6 +15,7 @@
         margin: 0 40px;
         padding: 5px;
     }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -35,7 +35,6 @@
         margin: 0 20px;
         padding: 4px;
         font-size: small;
-        width: 87%;
     }
 
     .topics-container {

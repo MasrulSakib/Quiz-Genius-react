@@ -11,19 +11,17 @@ const Topics = () => {
 
 
     return (
-        <div>
-            <div className='topics-container'>
+        <div className='topics-container'>
 
-                {
-                    courses.map(course =>
-                        <Data
-                            key={course.id}
-                            course={course} >
-                        </Data>
-                    )
-                }
+            {
+                courses.map(course =>
+                    <Data
+                        key={course.id}
+                        course={course} >
+                    </Data>
+                )
+            }
 
-            </div>
         </div>
     );
 };

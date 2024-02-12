@@ -40,6 +40,7 @@ const Statistics = () => {
                 </BarChart>
             </ResponsiveContainer>
         </div>
+
     );
 };
 
